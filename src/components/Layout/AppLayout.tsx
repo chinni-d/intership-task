@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { HomeIcon, Search, HeartIcon, UserIcon, PlusIcon } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -48,7 +48,7 @@ const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         />
         <div className="mt-0.5">
           <Link
-            to="/create-trip"
+            to="/travel-preferences"
             className="bg-purple-600 w-8 h-8 rounded-full flex items-center justify-center shadow-lg"
           >
             <PlusIcon size={24} className="text-white" />
